@@ -1,0 +1,27 @@
+  <div class="row m-5">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6 text-center"><h2 class="text-primary font-weight-bold">Manipulation with GraphQL data</h2></div>
+    <div class="col-lg-3 align-center"><a class="btn btn-primary" routerLink="/app-add">Add New Item</a></div>
+  </div>
+  <div class="container m-5">
+
+  <table class="table ">
+  <thead>
+  <tr>
+    <th scope="col">Title</th>
+    <th scope="col">Description</th>
+    <th scope="col">Likes</th>
+    <th scope="col">Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let post of posts">
+    <th >{{post.title}}</th>
+    <td>{{post.description}}</td>
+    <td>{{post.likes}}</td>
+    <td><button class="btn btn-danger" (click)="deletePost(post)">Delete Item</button></td>
+  </tr>
+
+  </tbody>
+</table>
+</div>

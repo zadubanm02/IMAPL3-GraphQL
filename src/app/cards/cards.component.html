@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6 p-3 text-center"><h2 class="font-weight-bold text-primary">Data from GraphQL API</h2>
+    <p>Data obtained from GraphQL API</p>
+    </div>
+    <div class="col-lg-3"></div>
+  </div>
+</div>
+<div class="container bg-light " *ngFor="let card of cards">
+  <div class="row m-4 border shadow" >
+    <div class="col-lg-4 p-0"><img src={{card.img}} class="img-fluid p-0"/> </div>
+    <div class="col-lg-8 text-center p-5">
+      <h3 class="font-weight-bold">{{card.title}}</h3>
+      <p>{{card.text}}</p>
+    </div>
+  </div>
+</div>
